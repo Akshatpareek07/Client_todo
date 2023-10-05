@@ -1,0 +1,34 @@
+.container{
+  text-align: center;
+}
+.NavBar{
+  background-color: black;
+}
+ul{
+ 
+  list-style-type: none;
+}
+.link{
+  text-decoration: none;
+  color: rgb(247, 243, 243);
+}
+.Nav-list{
+  margin: 0px;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+
+
+}
+.home-page{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Heading{
+  text-align: center;
+  font-size:100px;
+}
