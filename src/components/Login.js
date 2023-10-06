@@ -33,7 +33,6 @@ const Login = () => {
       header:{
       },
       data:inputField
-
     }
     try{
       let response=await axios(options)
@@ -41,11 +40,12 @@ const Login = () => {
       if(response.data.data.message==="Login Successfully")
       {
         toast.success("LogIn Successfully");
-        // history.push('/login');
-        // <Redirect to="/login" />
-        // <Login/>
+       
         navigate('/loginUser');
 
+      }
+      else{
+        toast.error("Incorrect Username password");
       }
     }catch(e){
       toast.error("Error!Unable to Login");
